@@ -39,7 +39,7 @@
          transition: all 0.3s;
          transform: scale(0);
       }
-      
+
       &:hover {
          color: $purple-color;
 
@@ -63,7 +63,6 @@
 
    .active {
       .nav-link {
-         
          &::after {
             transform: scale(1);
          }
@@ -71,7 +70,7 @@
    }
 }
 
-@include responsive('large-down') {
+@include responsive("large-down") {
    #header {
       .navbar {
          justify-content: left;

@@ -7,7 +7,7 @@
    box-shadow: 0 0 0 $bs-1 $purple-color inset;
    text-transform: uppercase;
    background: transparent;
-   
+
    i {
       @include style-text($fs-3, 800, $white-color-1, $lh-2);
    }

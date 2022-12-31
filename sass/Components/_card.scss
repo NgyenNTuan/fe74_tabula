@@ -12,7 +12,7 @@
    }
 
    .card-img-top {
-      transform: scale3d(1,1,1);
+      transform: scale3d(1, 1, 1);
       transition: all 0.5s;
    }
    .card-body {
@@ -28,7 +28,7 @@
       }
 
       .card-text {
-         font-family: 'Roboto', sans-serif;
+         font-family: "Roboto", sans-serif;
       }
    }
 
@@ -36,7 +36,7 @@
       box-shadow: 0 30px 30px -10px $dark-color-1;
 
       .card-img-top {
-         transform: scale3d(1.1,1.1,1.1);
+         transform: scale3d(1.1, 1.1, 1.1);
       }
    }
 }
