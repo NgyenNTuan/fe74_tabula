@@ -29,6 +29,15 @@
       i {
          @include style-text($fs-9, $fw-2, $white-color-1, $lh-6);
          padding-right: $pd-4;
+         transition: all 0.5s;
+      }
+
+      a {
+         &:hover {
+            i {
+               color: $dark-color;
+            }
+         }
       }
    }
 

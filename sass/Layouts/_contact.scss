@@ -1,8 +1,13 @@
 #contact {
    padding-top: $pd-8;
-   @include style-bg-img(url("./../../imgs/accent_bottom_wave_01.png"), no-repeat, contain, bottom);
+   @include style-bg-img(
+      url("./../../imgs/accent_bottom_wave_01.png"),
+      no-repeat,
+      contain,
+      bottom
+   );
 
-   &>.container {
+   & > .container {
       width: 1000px;
    }
 
@@ -37,6 +42,7 @@
             transform: translateY(-50%);
             color: $purple-color;
          }
+
          .form-control {
             border-radius: $br-1;
             background-color: transparent;
@@ -49,6 +55,10 @@
             &:focus {
                box-shadow: 0 0 $bs-3 0 $dark-color-2;
                border: $bd-1 solid $dark-color-4;
+            }
+
+            option {
+               font-size: 0.8rem;
             }
          }
 
@@ -69,7 +79,7 @@
    }
 }
 
-@include responsive('large-down') {
+@include responsive("large-down") {
    #contact {
       .container {
          width: 100%;
@@ -77,8 +87,8 @@
    }
 }
 
-@include responsive('medium-down') {
+@include responsive("medium-down") {
    .btn {
       width: 100%;
-   }  
+   }
 }

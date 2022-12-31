@@ -280,6 +280,9 @@ p {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
+#contact .contact__form .form-group .form-control option {
+  font-size: 0.8rem;
+}
 #contact .contact__form .form-group .icon--mes {
   top: 20px !important;
 }
@@ -341,6 +344,10 @@ p {
   color: #fff;
   line-height: 1.1;
   padding-right: 1em;
+  transition: all 0.5s;
+}
+#footer .footer__contact--social a:hover i {
+  color: #191919;
 }
 #footer .footer__link-item {
   list-style: none;
