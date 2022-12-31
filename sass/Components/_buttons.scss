@@ -1,0 +1,26 @@
+.btn--purple {
+   text-align: center;
+   padding: $pd-2 $pd-3;
+   margin: $mg-3;
+   transition: all 0.5s;
+   border-radius: $br-1;
+   box-shadow: 0 0 0 $bs-1 $purple-color inset;
+   text-transform: uppercase;
+   background: transparent;
+   
+   i {
+      @include style-text($fs-3, 800, $white-color-1, $lh-2);
+   }
+   span {
+      @include style-text($fs-3, $fw-2, $white-color-1, $lh-2);
+   }
+   &:hover {
+      box-shadow: 0 0 0 $bs-2 $purple-color inset;
+      i {
+         color: $purple-color;
+      }
+      span {
+         color: $purple-color;
+      }
+   }
+}

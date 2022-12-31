@@ -1,0 +1,25 @@
+@mixin style-text($fs, $fw, $color, $lh) {
+   font-size: $fs;
+   font-weight: $fw;
+   color: $color;
+   line-height: $lh;
+}
+
+@mixin style-bg-img($url, $rp, $s, $ps) {
+   background-image: $url;
+   background-repeat: $rp;
+   background-size: $s;
+   background-position: $ps;
+}
+
+@mixin responsive($screen) {   
+    @if(map-has-key($map:$breakpoints , $key:$screen )){      
+        $value: map-get($map:$breakpoints , $key:$screen );       
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{       
+        @warn "`{$screen}` isn't in breakpoint";
+    }
+}

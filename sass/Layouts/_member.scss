@@ -1,0 +1,5 @@
+#member {
+   background-color: $dark-color-3;
+   padding-top: 20px;
+   @include style-bg-img(url("./../../imgs/Wave_White_bottom_right_shape_01.png"), no-repeat, contain, bottom);
+}

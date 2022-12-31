@@ -1,0 +1,84 @@
+#contact {
+   padding-top: $pd-8;
+   @include style-bg-img(url("./../../imgs/accent_bottom_wave_01.png"), no-repeat, contain, bottom);
+
+   &>.container {
+      width: 1000px;
+   }
+
+   .contact__img {
+      img {
+         padding: 30px;
+      }
+   }
+
+   .contact__form {
+      background-color: $white-color-2;
+      padding: $pd-7;
+      border-radius: $br-2;
+      box-shadow: 0 30px 30px -10px $dark-color-1;
+
+      h4 {
+         @include style-text($fs-10, $fw-4, $dark-color, $lh-8);
+         padding-bottom: $pd-11;
+      }
+
+      .col-lg-6:first-of-type {
+         padding-right: 0;
+      }
+
+      .form-group {
+         position: relative;
+
+         i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $purple-color;
+         }
+         .form-control {
+            border-radius: $br-1;
+            background-color: transparent;
+            padding: $pd-4 $pd-4 $pd-4 $pd-5;
+            border: $bd-1 solid $dark-color-2;
+            @include style-text($fs-11, $fw-1, $dark-color, $lh-2);
+            height: $h-1;
+            outline: 0;
+
+            &:focus {
+               box-shadow: 0 0 $bs-3 0 $dark-color-2;
+               border: $bd-1 solid $dark-color-4;
+            }
+         }
+
+         .icon--mes {
+            top: 20px !important;
+         }
+         textarea {
+            border-radius: $br-3 !important;
+            height: $h-5 !important;
+         }
+      }
+
+      .btn {
+         width: $w-2;
+         margin: 20px 0 35px;
+         padding: $pd-6 $pd-3;
+      }
+   }
+}
+
+@include responsive('large-down') {
+   #contact {
+      .container {
+         width: 100%;
+      }
+   }
+}
+
+@include responsive('medium-down') {
+   .btn {
+      width: 100%;
+   }  
+}
